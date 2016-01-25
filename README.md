@@ -10,6 +10,7 @@
 > * ssh安全设置和root密码更改
 > * saltstack和zabbix-agent安装配置
 
+运行脚本：./main.sh
 ------
 
 如有好的意见和建议，欢迎随时pull。
