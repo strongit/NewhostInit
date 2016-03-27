@@ -12,5 +12,5 @@
 
 ------
 
-获取仓库脚本：git https://github.com/strongit/NewhostInit.git  运行脚本：./main.sh。
+获取仓库脚本：git clone https://github.com/strongit/NewhostInit.git  运行脚本：./main.sh。
 如有好的意见和建议，欢迎随时pull。
