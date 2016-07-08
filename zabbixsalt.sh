@@ -5,6 +5,7 @@
 #get salt-minion and zabbix-agent program
 ###########################################
 
+#Ubuntu
 apt-get install salt-minion
 echo "master:"    > /etc/salt/minion 
 echo "   - 192.168.2.2" >>/etc/salt/minion 
@@ -29,3 +30,29 @@ sed -i "s/Hostname=Zabbix server/Hostname=${hostname}/g" `grep "Hostname=Zabbix 
 service zabbix-agent restart
 echo "zabbix-agent install successfull"
 sleep 10
+
+#redhat
+#os_version=`awk '{printf "%d" ,$3}' /etc/redhat-release`
+#if [ $os_version -lt 5 ];then
+#	echo 'need centos 5 or newer'
+#	exit 254
+#fi
+#if [ $os_version -eq 5 ];then
+#    if ! rpm -ql epel-release ;then
+#	if rpm -Uvh http://repo.zabbix.com/zabbix/3.0/rhel/6/x86_64/zabbix-agent-3.0.2-1.el6.x86_64.rpm ;then
+#		yum -y zabbix-agent
+#	fi
+#     else
+#		yum -y install zabbix-agent
+#    fi
+#fi
+#
+#if [ $os_version -eq 6 ];then
+#    if ! rpm -ql epel-release ;then
+#        if  rpm -Uvh http://repo.zabbix.com/zabbix/3.0/rhel/7/x86_64/zabbix-agent-3.0.2-1.el7.x86_64.rpm ;then
+#               yum -y install zabbix-agent
+#        fi
+#    else
+#		yum -y install zabbix-agent
+#    fi
+#fi
