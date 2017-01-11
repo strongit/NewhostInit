@@ -12,6 +12,7 @@
 > * 海量服务器操作脚本，包括分发、执行命令、统计等
 > * ip ——> 域名查找 www.iplist.net
 > * shell批量远程登陆和执行基线脚本
+
 ------
 
 获取仓库脚本：git clone https://github.com/strongit/NewhostInit.git 
