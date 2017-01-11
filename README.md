@@ -10,8 +10,9 @@
 > * ssh安全设置和root密码更改
 > * saltstack和zabbix-agent安装配置
 > * 海量服务器操作脚本，包括分发、执行命令、统计等
-
+> * ip ——> 域名查找 www.iplist.net
+> * shell批量远程登陆和执行基线脚本
 ------
 
-获取仓库脚本：git clone https://github.com/strongit/NewhostInit.git  运行脚本：./main.sh。
+获取仓库脚本：git clone https://github.com/strongit/NewhostInit.git 
 如有好的意见和建议，欢迎随时pull。
