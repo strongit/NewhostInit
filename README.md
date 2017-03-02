@@ -1,19 +1,19 @@
 :snail: useful-scripts [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 ====================================
 
-[![GitHub stars](https://img.shields.io/github/stars/oldratlee/useful-scripts.svg?style=social&label=Star&)](https://github.com/oldratlee/useful-scripts/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/oldratlee/useful-scripts.svg?style=social&label=Fork&)](https://github.com/oldratlee/useful-scripts/fork)
+[![GitHub stars](https://img.shields.io/github/stars/oldratlee/useful-scripts.svg?style=social&label=Star&)](https://github.com/strongit/NewhostInit/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/oldratlee/useful-scripts.svg?style=social&label=Fork&)](https://github.com/strongit/NewhostInit/fork)
 
 
 把平时有用的手动操作做成脚本，这样可以便捷的使用。 :sparkles:
 
-有自己用的好的脚本 或是 平时常用但没有写成脚本的功能，欢迎提供（[提交Issue](https://github.com/oldratlee/useful-scripts/issues))和分享（[Fork后提交代码](https://github.com/oldratlee/useful-scripts/fork)）！ :sparkling_heart:
+有自己用的好的脚本 或是 平时常用但没有写成脚本的功能，欢迎提供（[提交Issue](https://github.com/strongit/NewhostInit/issues))和分享（[Fork后提交代码](https://github.com/strongit/NewhostInit/fork)）！ :sparkling_heart:
 
 :beginner: 快速下载&使用
 ----------------------
 
 ```bash
-source <(curl -fsSL https://raw.githubusercontent.com/oldratlee/useful-scripts/master/test-cases/self-installer.sh)
+source <(curl -fsSL https://raw.githubusercontent.com/strongit/NewhostInit/master/test-cases/self-installer.sh)
 ```
 
 更多下载&使用方式，参见[下载使用](docs/install.md)。
@@ -64,20 +64,29 @@ source <(curl -fsSL https://raw.githubusercontent.com/oldratlee/useful-scripts/m
     把指定的远程分支从刚新建分支以来的修改合并到本地`svn`目录或是另一个远程分支。
 1. [cp-svn-url.sh](docs/vcs.md#beer-cp-svn-urlsh)  
     拷贝当前`svn`目录对应的远程分支到系统的粘贴板，省去`CTRL+C`操作。
-# 欢迎使用服务器初始化脚本
 
-------
 
-运维部门需要部署大量新服务器，除了安装好的系统，其他均需要自己动手，**main.sh** 是针对此问题编写的shell脚本。可以实现以下功能：
 
-> * Print系统信息
-> * 源更新
-> * 添加用户和密钥
-> * ssh安全设置和root密码更改
-> * saltstack和zabbix-agent安装配置
-> * 海量服务器操作脚本，包括分发、执行命令、统计等
-> * ip ——> 域名查找 www.iplist.net
+> * 1000_of_mv.sh & 1000_of_mv.py 海量小文件迁移脚本
+> * a21 & colines.py & console-text-color-themes.sh & echo-args.sh 每行彩色输出各个参数或文件内容
+> * adduser 添加用户，并ssh互信
+> * ap & rp 输出绝对路径
+> * cp-svn-url.sh & svn-merge-stop-on-copy.sh & svn_trunk.sh  SVN相关脚本
+> * apt_upgrade.sh 更新yum源
+> * fabfile.py fabric的API应用
+> * find-in-jars.sh  当前目录查找jar文件
+> * freebug.sh 系统安全诊断
+> * zabbixsalt.sh saltstack和zabbix-agent安装配置
+> * ssh-copy-file.sh & ssh-copy-id-expect.sh & sshAndchangepasswd.sh 海量服务器操作脚本，包括分发、执行命令、统计等
+> * iplist.py ip ——> 域名查找 www.iplist.net
 > * shell批量远程登陆和执行基线脚本
+> * monitor-host.sh & show-cpu-and-memory.sh 主机监控脚本
+> * nginx-state_counter.sh & tcp-connection-state-counter.sh nginx和tcp状态监控脚本
+> * output_clipper  不同系统的命令复制脚本
+> * parseOpts.sh
+> * show-busy-java-threads.sh & show-duplicate-java-classes java进程相关
+> * xpf & xpl 在文件浏览器中打开文件
+
 
 ------
 
