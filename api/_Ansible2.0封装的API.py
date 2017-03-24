@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# Author: Ycan
+# Author: StrongIt
 # Ansible API And Version >=2.0
 
 from __future__ import (absolute_import, division, print_function)
