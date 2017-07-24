@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	apiurl := "http://117.23.56.5:1988/v1/push"
+	apiurl := "http://IP:1988/v1/push"
 	fmt.Println("URL:>", apiurl)
 	type item struct {
 		Endpoint    string `json:"endpoint"`
@@ -56,8 +56,8 @@ func main() {
 
 结果：
 /*
-  URL:> http://117.23.56.5:1988/v1/push
-	http://117.23.56.5:1988/v1/push post {[{test-endpoint test-metric 1500804940 60 10 GAUGE idc=xixian}]}
+  URL:> http://IP:1988/v1/push
+	http://IP:1988/v1/push post {[{test-endpoint test-metric 1500804940 60 10 GAUGE idc=xixian}]}
 	jsonStr [91 123 34 101 110 100 112 111 105 110 116 34 58 34 116 101 115 116 45 101 110 100 112 111 105 110 116 34 44 34 109 101 116 114 105 99 34 58 34 116 101 115 116 45 109 101 116 114 105 99 34 44 34 116 105 109 101 115 116 97 109 112 34 58 49 53 48 48 56 48 52 57 52 48 44 34 115 116 101 112 34 58 54 48 44 34 118 97 108 117 101 34 58 49 48 44 34 99 111 117 110 116 101 114 84 121 112 101 34 58 34 71 65 85 71 69 34 44 34 116 97 103 115 34 58 34 105 100 99 61 120 105 120 105 97 110 34 125 93]
 	new_str [{"endpoint":"test-endpoint","metric":"test-metric","timestamp":1500804940,"step":60,"value":10,"counterType":"GAUGE","tags":"idc=xixian"}]
 	response Status: 200 OK
