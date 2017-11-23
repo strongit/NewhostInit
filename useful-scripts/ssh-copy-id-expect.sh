@@ -1,5 +1,5 @@
 #!/usr/bin/expect
-#for ((i=1;i<254;i++)) ; do  echo "192.168.2.$i:fangcang" >> hosts.txt; done
+#for ((i=1;i<254;i++)) ; do  echo "192.168.2.$i:password123" >> hosts.txt; done
 #yum install expect
 #hosts.txt格式：host:ip
 info=`awk '{print $0}' ./hosts.txt`
